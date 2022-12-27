@@ -1,0 +1,10 @@
+body #viewData {
+  display: none;
+}
+body table {
+  border-collapse: collapse;
+  width: 100%;
+}
+body table td {
+  border: 1px solid black;
+}
