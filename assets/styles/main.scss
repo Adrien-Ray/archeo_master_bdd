@@ -45,5 +45,10 @@ body{
                 border: 1px solid black;
             }
         }
+        iframe{
+            width: 30rem;
+            height: 25rem;
+            max-width: 100%;
+        }
     }
 }
