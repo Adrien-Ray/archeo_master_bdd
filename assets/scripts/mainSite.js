@@ -15,6 +15,9 @@ thisLieu.materiels = jsonMaterielsForThis;
 console.log(thisLieu);
 
 // display data in template
+
+document.getElementById('map').innerHTML = `<iframe id="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=${thisLieu.longitude}%2C${thisLieu.latitude}%2C${thisLieu.longitude}%2C${thisLieu.latitude}&amp;layer=mapnik&amp;marker=${thisLieu.latitude}%2C${thisLieu.longitude}" style="border: 1px solid black"></iframe>`
+
 document.getElementById('title').innerText = `Site: ${thisLieu.sites}`;
 document.getElementById('commune').innerText = `Commune: ${thisLieu.commune}`;
 document.getElementById('region').innerText = `Region: ${thisLieu.region}`;
@@ -39,5 +42,3 @@ for (const materiel of thisLieu.materiels) {
 }
 
 document.getElementById('materiels').innerHTML = materielsDom;
-
-document.getElementById('map').setAttribute('src', `https://www.openstreetmap.org/export/embed.html?bbox=${thisLieu.longitude}%2C${thisLieu.latitude}%2C${thisLieu.longitude}%2C${thisLieu.latitude}&amp;layer=mapnik`);
