@@ -1,7 +1,21 @@
+:root{
+    --backMainColor: rgb(212, 212, 212);
+}
 body{
     margin: 0;
+    border: .5rem solid var(--backMainColor);
+    min-height: calc(100vh - 1rem);
+    font-family: sans-serif;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: serif;
+        font-weight: bolder;
+        color: rgb(31, 31, 109);
+        /* &::before{
+            content: '> ';
+        } */
+    }
     header{
-        background-color: rgb(187, 187, 187);
+        background-color: var(--backMainColor);
         padding: 0;
         display: flex;
         a{
@@ -14,19 +28,22 @@ body{
             &:last-child{
                 margin: 0;
             }
+            &.nav__thisPage{
+                background-color: white;
+            }
             &:hover{
                 background-color: white;
             }
         }
     }
-    #viewData{
-        display: none;
-    }
-    table{
-        border-collapse: collapse;
-        width: 100%;
-        td{
-            border: 1px solid black;
+    .content{
+        padding: .8rem;
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            td{
+                border: 1px solid black;
+            }
         }
     }
 }
