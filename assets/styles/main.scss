@@ -1,4 +1,24 @@
 body{
+    margin: 0;
+    header{
+        background-color: rgb(187, 187, 187);
+        padding: 0;
+        display: flex;
+        a{
+            display: block;
+            height: 100%;
+            padding: .5rem;
+            text-decoration: none;
+            color: black;
+            transition: all ease-in-out .2s;
+            &:last-child{
+                margin: 0;
+            }
+            &:hover{
+                background-color: white;
+            }
+        }
+    }
     #viewData{
         display: none;
     }
