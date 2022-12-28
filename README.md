@@ -2,4 +2,8 @@
 
 ## to-do
 
- - [ ] get automatic setup if go pages site.html and portail.html without localStorage.
+ - [ ] map
+
+ ## done release
+
+ - [X] get automatic setup if go pages site.html and portail.html without localStorage.

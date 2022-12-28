@@ -40,4 +40,4 @@ for (const materiel of thisLieu.materiels) {
 
 document.getElementById('materiels').innerHTML = materielsDom;
 
-document.getElementById('map').setAttribute('src', `https://www.openstreetmap.org/export/embed.html?bbox=5.063688755035401%2C47.52147924006879%2C5.066451430320741%2C47.52302790664638&amp;layer=mapnik`);
+document.getElementById('map').setAttribute('src', `https://www.openstreetmap.org/export/embed.html?bbox=${thisLieu.longitude}%2C${thisLieu.latitude}%2C${thisLieu.longitude}%2C${thisLieu.latitude}&amp;layer=mapnik`);
