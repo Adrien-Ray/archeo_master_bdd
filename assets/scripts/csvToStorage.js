@@ -7,7 +7,7 @@ function csvToStorage(lieuxCsv, materielsCsv) {
     const jsonMateriels = csvToJson(materielsCsv);
     const tockenToLocalStorage = saveInLocalStorage(jsonLieux, jsonMateriels);
     if (tockenToLocalStorage === true) {
-        alert('vos données sont enregistrer temporairement');
+        alert('la base de donnée est à présent chargé');
         location.href = './portail.html';
     } else {
         alert('un problème est survenu');
